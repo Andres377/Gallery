@@ -1,0 +1,88 @@
+main {
+    margin-top: 180px; /* Igual a la altura inicial del header */
+}
+*{
+    box-sizing:border-box;
+
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+/* Estilo inicial del header */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.9); /* Color inicial con opacidad */
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px; /* Tamaño inicial */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    transition: all 0.3s ease; /* Transiciones suaves */
+}
+
+/* Logo */
+.header .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* Navegación */
+.header .nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.header .nav a:hover {
+    color: #f0a500; /* Color de hover */
+}
+
+/* Modificaciones al hacer scroll */
+.header.shrink {
+    padding: 10px 40px; /* Reduce el tamaño del padding */
+    background-color: rgba(0, 0, 0, 0.6); /* Más transparencia */
+}
+
+.header.shrink .logo {
+    font-size: 1.2rem; /* Reduce el tamaño del logo */
+}
+
+.header.shrink .nav a {
+    font-size: 0.9rem; /* Reduce el tamaño de los enlaces */
+}
+
+img{
+    width: 100%; 
+}
+.row{
+    display: flex;
+    padding: 5px;
+    flex-wrap: wrap;
+    top: 8px;
+}
+.column{
+    flex: 25%;
+    padding: 5px;
+}
+.column img{
+    margin-top: 5px;
+}
+
+@media (max-width:900px){
+    .column{
+        flex: 50%;
+    }
+}
+@media (max-width:600px){
+    .column{
+        flex: 100%;
+    }
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria Dani</title>
+    <link rel="stylesheet" href="styles.css"/>
+    
+</head>
+<body>
+    <header class="header">
+        <div class="logo">Galería Dani</div>
+        <nav class="nav">
+            <a href="#section1">Inicio</a>
+            <a href="#section2">Galería</a>
+            <a href="#section3">Contacto</a>
+        </nav>
+    </header>
+    <br><br><br>
+    <div class="row">
+       <div class="column">
+        <img alt="photo 1" src="img/IMG_1.jpg"/>
+        <img alt="photo 2" src="img/IMG_2.jpg"/>
+        <img alt="photo 3" src="img/IMG_3.jpg"/>
+        <img alt="photo 4" src="img/IMG_4.jpg"/>
+        <img alt="photo 18" src="img/IMG_18.jpg"/>
+        <img alt="photo 16" src="img/IMG_17.jpg"/>
+       </div>
+       <div class="column">
+        <img alt="photo 5" src="img/IMG_5.jpg"/>
+        <img alt="photo 6" src="img/IMG_6.jpg"/>
+        <img alt="photo 7" src="img/IMG_7.jpg"/>
+        <img alt="photo 8" src="img/IMG_8.jpg"/>
+        <img alt="photo 13" src="img/IMG_13.jpg"/>
+        <img alt="photo 20" src="img/IMG_24.jpg"/>
+       </div>
+       <div class="column">
+        <img alt="photo 10" src="img/IMG_10.jpg"/>
+        <img alt="photo 9" src="img/IMG_9.jpg"/>
+        <img alt="photo 11" src="img/IMG_11.jpg"/>
+        <img alt="photo 15" src="img/IMG_15.jpg"/>
+        <img alt="photo 12" src="img/IMG_12.jpg"/>
+        <img alt="photo 21" src="img/IMG_23.jpg"/>
+       </div>
+       <div class="column">
+        <img alt="photo 21" src="img/IMG_25.jpg"/>
+        <img alt="photo 14" src="img/IMG_14.jpg"/>
+        <img alt="photo 20" src="img/IMG_22.jpg"/>
+        <img alt="photo 19" src="img/IMG_19.jpg"/>
+        <img alt="photo 20" src="img/IMG_20.jpg"/>
+        <img alt="photo 21" src="img/IMG_21.jpg"/>
+       </div> 
+    </div>
+    <script>
+        // Agrega o quita la clase 'shrink' según el scroll
+        window.addEventListener('scroll', function () {
+            const header = document.querySelector('.header');
+            if (window.scrollY > 50) {
+                header.classList.add('shrink');
+            } else {
+                header.classList.remove('shrink');
+            }
+        });
+    </script>
+    
+</body>
+</html>
